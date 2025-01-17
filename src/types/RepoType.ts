@@ -9,4 +9,5 @@ export interface Repo {
     html_url: string; // Ссылка
     stargazers_count: number; // Звезды на репо
     topics: string[]; // Темы
+    forks: number;
 }
