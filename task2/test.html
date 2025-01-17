@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventEmitter Test</title>
+</head>
+<body>
+<button id="add-listener-1">Подписать 1</button>
+<button id="add-listener-2">Подписать 2</button>
+<button id="emit-event">Emit</button>
+<button id="remove-listener-1">Отписать 1</button>
+<button id="remove-listener-2">Отписать 2</button>
+
+<script src="EventEmitter.js"></script>
+<script>
+    const addListenerButton1 = document.getElementById('add-listener-1');
+    const addListenerButton2 = document.getElementById('add-listener-2');
+    const emitEventButton = document.getElementById('emit-event');
+    const removeListenerButton1 = document.getElementById('remove-listener-1');
+    const removeListenerButton2 = document.getElementById('remove-listener-2');
+
+    // Регистрация обработчиков при нажатии кнопки
+    addListenerButton1.addEventListener('click', () => {
+        emitter.on('testEvent', listener1);
+        console.log('Слушатель 1 подписан на событие');
+    });
+    addListenerButton2.addEventListener('click', () => {
+        emitter.on('testEvent', listener2);
+        console.log('Слушатель 2 подписан на событие');
+    });
+
+    // Испускание события при нажатии кнопки
+    emitEventButton.addEventListener('click', () => {
+        emitter.emit('testEvent', { message: 'Приветики подписчики' });
+    });
+
+    // Удаление обработчиков при нажатии кнопки
+    removeListenerButton1.addEventListener('click', () => {
+        emitter.off('testEvent', listener1);
+        console.log('Слушатель 1 отписан');
+    });
+    removeListenerButton2.addEventListener('click', () => {
+        emitter.off('testEvent', listener2);
+        console.log('Слушатель 2 отписан');
+    });
+</script>
+</body>
+</html>
