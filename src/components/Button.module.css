@@ -1,0 +1,26 @@
+.button {
+    padding: 10px 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    filter: brightness(90%);
+}
+
+.button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(3, 102, 214, 0.5);
+}
