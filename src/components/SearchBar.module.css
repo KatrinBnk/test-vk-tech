@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputsRow {
+    display: flex;
+    gap: 10px;
+}
+
+.input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: border-color 0.2s;
+}
+
+.select:focus {
+    border-color: #0366d6;
+    outline: none;
+}
+
+.dateRow {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dateInput {
+    margin-left: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
