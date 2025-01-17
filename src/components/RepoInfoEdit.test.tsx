@@ -20,6 +20,14 @@ describe("RepoInfoEdit", () => {
         id: 1,
         name: "Test Repo",
         description: "Test Description",
+        owner: {
+            login: "Unknown",
+            type: "User",
+        },
+        html_url: "url", // Ссылка
+        stargazers_count: 12,
+        topics: [],
+        forks: 0
     };
 
     beforeEach(() => {
