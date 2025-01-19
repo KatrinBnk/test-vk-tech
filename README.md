@@ -71,7 +71,7 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/KatrinBnk/test-vk-tech.git
+   gh repo clone https://github.com/KatrinBnk/test-vk-tech.git
    ```
 
 2. Перейдите в директорию проекта:
@@ -86,7 +86,7 @@
 
 4. Запустите приложение:
    ```bash
-   npm start
+   npm run dev
    ```
 
 
